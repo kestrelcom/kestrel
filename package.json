@@ -1,0 +1,11 @@
+{
+  "name": "kestrel",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd src-tauri && cargo tauri dev",
+    "build": "cd src-tauri && cargo tauri build",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build"
+  }
+}
