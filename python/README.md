@@ -1,4 +1,4 @@
-# Kestrel AI Layer
+# Kestrel Python Module
 
 Python ML/processing layer for Kestrel.
 
