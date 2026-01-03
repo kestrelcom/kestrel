@@ -151,25 +151,33 @@ kestrel/
 
 ### Installation
 
-Frontend:
+**1. Install frontend dependencies:**
 
-```
+```bash
 cd frontend
 npm install
+cd ..
 ```
 
-Python:
+**2. Set up Python virtual environment:**
 
-```
+```bash
 cd ai-layer
+python3 -m venv .venv
+source .venv/bin/activate  # On macOS/Linux
+# On Windows: .venv\Scripts\activate
+pip install --upgrade pip setuptools wheel
 pip install -e .
+cd ..
 ```
 
-Run:
+**3. Run the app:**
 
-```
+```bash
 npm run dev
 ```
+
+**Note:** For Rust, Cargo automatically manages dependencies per project (no virtual environment needed). The `target/` directory is like `node_modules` for Rust and is already ignored in `.gitignore`.
 
 ---
 
